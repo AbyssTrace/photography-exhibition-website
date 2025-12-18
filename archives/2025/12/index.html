@@ -8,20 +8,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Shadow">
   <meta name="keywords" content="">
-  <meta name="description" content="">
+  <meta name="description" content="A simple & clear & elegant hexo theme">
   <script id="hexo-configurations">
   var CONFIG = {
     root: '/',
     theme: 'lx',
     version: '0.4.4',
     localsearch:{
-      "enable": false,
+      "enable": true,
       "trigger": "auto",
       "top_n_per_article": 1,
       "unescape": false,
       "preload": false
       },
-    path: 'null'
+    path: 'search.json'
   };
 </script>
 
@@ -66,13 +66,29 @@
 <body>
 
 <div id="page">
+<div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Search..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
 
 <div class="header">
-  <div id="lx-aside" style="background-image: url(https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/images/cover.min.jpeg)">
+  <div id="lx-aside" style="background-image: url(/assets/message1766063853176.jpg)">
     <div class="overlay">
-      
+      <a href="javascript:;" class="popup-trigger" title="search"><i class="menu-item-icon fa fa-search fa-fw"></i></a>
       <div class="featured">
-        <div class="avatar"><a href="/"><img src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/images/avatar.min.jpeg" alt="Shadow"></a></div>
+        <div class="avatar"><a href="/"><img src="/assets/head.jpg" alt="Shadow"></a></div>
         <span>Shadow</span>
         <h1>摄影集</h1>
         
@@ -85,9 +101,12 @@
   <div class="lx-post">
   <h2 class="pagehead">Archives</h2>
     <div class="lx-entry padding"><div>
-    <span class="lx-post-detail">2025-12-06</span>
-    <h2 class="title"><a href="/2025/12/06/hello-world/">Hello World</a></h2>
-    <p></p></div></div>
+    <span class="lx-post-detail">2025-12-18</span>
+    <h2 class="title"><a href="/2025/12/18/%E6%B7%B1%E5%9C%B3%E5%9F%8E%E5%B8%82%E8%A7%84%E5%88%92%E9%A6%86/">深圳城市规划馆</a></h2>
+    <p><i class="fa fa-tag"></i><a class="tag-none-link" href="/tags/%E6%B7%B1%E5%9C%B3/" rel="tag">深圳</a></p></div></div><div class="lx-entry padding"><div>
+    <span class="lx-post-detail">2025-12-10</span>
+    <h2 class="title"><a href="/2025/12/10/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E4%B8%AA%E6%91%84%E5%BD%B1%E5%B1%95/">终将成为你画册</a></h2>
+    <p><i class="fa fa-tag"></i><a class="tag-none-link" href="/tags/%E5%8A%A8%E6%BC%AB/" rel="tag">动漫</a></p></div></div>
 
 
 <footer>
@@ -111,12 +130,12 @@
       <div class="col">
         <div class="row for-pic">
           <div class="profile-pic">
-            <a href="/"><img src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/images/avatar.min.jpeg" alt="Shadow"/></a>
+            <a href="/"><img src="/assets/head.jpg" alt="Shadow"/></a>
           </div>
         </div>
         <div class="row for-name">
           <p>Shadow</p>
-          <span class="tagline">Hello, World!</span>
+          <span class="tagline">A simple & clear & elegant hexo theme</span>
         </div>
       </div>
     </span>
@@ -172,7 +191,7 @@
 	});
 }());
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/theme-lx@0.4.4/source/dist/js/local.search.min.js"></script>
 
 </body>
 </html>
